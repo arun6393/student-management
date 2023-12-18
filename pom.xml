@@ -8,6 +8,16 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>student-management Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+
+
+	<properties>
+		<maven.compiler.source>20</maven.compiler.source>
+		<maven.compiler.target>20</maven.compiler.target>
+		
+		<spring.version>6.1.2</spring.version>
+	</properties>
+
+
 	<dependencies>
 
 		<!--
@@ -15,14 +25,14 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>6.1.2</version>
+			<version>${spring.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>6.1.2</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 		<dependency>
